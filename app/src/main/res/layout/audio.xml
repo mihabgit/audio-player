@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:onClick="audioPicked">
+
+    <ImageView
+        android:id="@+id/ivAudioArt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:srcCompat="@android:drawable/picture_frame" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ivAudioArt"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            tools:text="Song Name" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal"
+            android:textSize="16sp"
+            tools:text="Artist" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            tools:text="03:30" />
+    </LinearLayout>
+</RelativeLayout>
